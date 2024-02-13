@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::selection{
+    color: #202020;
+    background-color: #1b8a6c;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+}
+
+.title{
+    margin: 15px 15px 5px 15px;
+    color: #105b47;
+    font-size: 40px;
+}
+
+.title span{
+    color: #202020!important;
+    padding: 4px 5px;
+    border-radius: 6px;
+    background-color: #105b47!important;
+}
+
+.description{
+    color: #0b3f31;
+    font-weight: 600;
+    word-spacing: 10px;
+}
+
+.chat-container{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin: 20px;
+    border: 2px solid #105b47;
+    border-radius: 15px;
+    background-color: #313131;
+    overflow: auto;
+}
+
+#chat{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+}
+
+#chat > li{
+    color: #eee;
+    margin: 0 25px 25px 0;
+    padding: 15px 20px;
+    border-radius: 25px;
+    list-style: none;
+    background-color: #0b3f31;
+    overflow: hidden;
+}
+
+.bot-li{
+    color: #eee;
+    margin: 10px;
+    padding: 20px 25px;
+    border-radius: 25px;
+    list-style: none;
+    background-color: #222;
+}
+
+.inp-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.inp-container > *{
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+
+.inp-container input[type="text"]{
+    color: #ccc;
+    width: 90%;
+    margin-right: 5px;
+    font-size: 17px;
+    background-color: #414141;
+}
+
+.inp-container input:focus{
+    outline: 1px solid #105b47;
+}
+
+.inp-container button{
+    color: #fff;
+    font-size: 17px;
+    background-color: #105b47;
+    cursor: pointer;
+}
